@@ -1,0 +1,114 @@
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 1.5rem;
+    --font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    background: url('../images/bg-pattern-top-mobile.svg') no-repeat, url('../images/bg-pattern-bottom-mobile.svg') no-repeat right 0px bottom -320px;;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(375 * 0.9px), 1fr));
+    width: 90%;
+    height: auto;
+    margin: 5rem auto 3rem;
+}
+
+.top-left-container h1 {
+    padding: 2.5rem;
+    font-size: 4rem;
+    line-height: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--very-dark-magenta);
+}
+
+.top-left-container p {
+    padding-bottom: 4rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--dark-grayish-magenta);
+}
+
+.box-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    height: 7rem;
+    border-radius: 1rem;
+    background-color: var(--light-grayish-magenta);
+}
+
+.box-rating span {
+    width: 10rem;
+    height: 2rem;
+    margin-bottom: .5rem;
+    background: url('../images/icon-star.svg'), url('../images/icon-star.svg') 2rem top, url('../images/icon-star.svg') 4rem top, url('../images/icon-star.svg') 6rem top, url('../images/icon-star.svg') 8rem top;
+    background-repeat: no-repeat;
+}
+
+.box-rating p {
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: var(--very-dark-magenta);
+}
+
+/* Feedback Box */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(375 * 0.9px), 1fr));
+    gap: 1.5rem;
+    width: 90%;
+    height: auto;
+    margin: 3rem auto 4rem;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .7rem;
+    padding: 3rem;
+    background-color: var(--very-dark-magenta);
+}
+
+.card__avatar {
+    align-self: center;
+    flex: 20;
+}
+.card__avatar img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.card__user-info {
+    flex: 80;
+    align-self: center;
+}
+
+.card__user-info p:nth-child(1) {
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+    
+}
+
+.card__user-info p:nth-child(2) {
+    font-weight: 500;
+    color: var(--soft-pink);
+}
+
+.card__feedback {
+    margin-top: 2rem;
+    color: var(--white);
+}

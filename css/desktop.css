@@ -1,0 +1,64 @@
+
+body {
+    background: url('../images/bg-pattern-top-desktop.svg') no-repeat, url('../images/bg-pattern-bottom-desktop.svg') no-repeat right 0px bottom -320px;
+    background-attachment: fixed, fixed;
+    
+}
+
+header {
+    grid-template-columns: 1fr 2fr;
+}
+ 
+.top-left-container h1 {
+    text-align: left;
+}
+
+.top-left-container p {
+    text-align: left;
+    padding: 2.5rem;
+}
+
+.rating {
+    padding-top: 5rem;
+}
+.box-rating {
+    flex-direction: row;
+    width: 50%;
+    height: 5rem;
+    padding-left: 3rem;
+    justify-content: flex-start;
+}
+
+.rating div:nth-of-type(1) {
+    margin-left: 20rem;
+}
+
+.rating div:nth-of-type(2) {
+    margin-left: 25rem;
+}
+
+.rating div:nth-of-type(3) {
+    margin-left: 30rem;
+}
+
+.stars__item {
+    margin-right: 2rem;
+}
+
+/* Inicio Main */
+
+main {
+    height: 300px;
+}
+
+article {
+    height: 240px;
+}
+
+article:nth-of-type(2) {
+    margin-top: 2rem;
+}
+
+article:nth-of-type(3) {
+    margin-top: 4rem;
+}
